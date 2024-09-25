@@ -1,38 +1,28 @@
-.App {
-  text-align: center;
+/* App.css */
+.objective-container {
+  max-width: 600px; /* Limit the max width */
+  margin: 40px auto; /* Centered with margin */
+  text-align: center; /* Center text */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center buttons */
+  margin: 20px 0; /* Add space around the button container */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.objective-button {
+  padding: 10px 20px; /* Button padding */
+  margin: 0 10px; /* Margin between buttons */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* Button text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Button font size */
+  transition: background-color 0.3s; /* Smooth transition for hover */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.objective-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
 }

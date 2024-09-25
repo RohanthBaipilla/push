@@ -1,0 +1,41 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between brand and links */
+    align-items: center;
+    background-color: #f8f9fa; /* Light background */
+    padding: 10px 20px; /* Padding for the navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Align links in a row */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+  }
+  
+  .navbar-links li {
+    margin: 0 15px; /* Spacing between links */
+  }
+  
+  .navbar-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Link color */
+    font-size: 18px;
+  }
+  
+  .navbar-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Add this to ensure links stay aligned to the left */
+  .navbar-links {
+    flex-grow: 1; /* Allow links to take available space */
+    justify-content: flex-start; /* Align links to the start (left) */
+  }
+  
